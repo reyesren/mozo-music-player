@@ -1,0 +1,41 @@
+{
+  "name": "mozo-music-player",
+  "private": true,
+  "dependencies": {
+    "@babel/preset-react": "^7.12.13",
+    "@rails/actioncable": "^6.0.0",
+    "@rails/ujs": "^6.0.0",
+    "@rails/webpacker": "5.2.1",
+    "axios": "^0.21.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "bootstrap": "^4.6.0",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^7.0.2",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react_ujs": "^2.6.1",
+    "react-bootstrap": "^1.5.2",
+    "react-dom": "^17.0.2",
+    "react-dotenv": "^0.1.3",
+    "react-flash-message": "^1.0.5",
+    "react-icons": "^4.2.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "react-s3": "^1.3.1",
+    "react-scroll": "^1.8.2",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "sharer.js": "^0.4.1",
+    "turbolinks": "^5.2.0",
+    "webpack": "^4.0.0",
+    "yup": "^0.32.9"
+  },
+  "version": "0.1.0",
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.2"
+  }
+}

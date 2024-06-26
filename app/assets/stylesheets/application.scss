@@ -1,0 +1,131 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap/scss/bootstrap";
+@import "./Landing/landing.scss";
+@import "./Auth/signup";
+@import "./UI/modal-close-button.scss";
+@import "./Playlists/playlists.scss";
+@import "./Music/music.scss";
+@import "./Auth/logout.scss";
+@import "./UI/modal-welcome-modal.scss";
+@import "./UI/media-controls.scss";
+@import "./About/about.scss";
+@import "./Search/search.scss";
+@import url("https://fonts.googleapis.com/css?family=Merriweather:400,700");
+
+$white: white;
+$black: black;
+$background: #1f2933;
+$cool-gray-200: #e4e7eb;
+$cool-gray-300: #9aa5b1;
+$playlist-font: #d9ea75;
+$create-playlist: #f0fda1;
+$delete-icon: #fce19d;
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: $background;
+  height: 100%;
+}
+
+.nav-color {
+  background-color: $black;
+}
+
+.nav-user-icon {
+  color: $white;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.nav-user {
+  color: $white;
+  margin-right: 15px;
+}
+
+.dropdown-options {
+  background-color: transparent;
+  color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.dropdown-options:hover {
+  color: transparent;
+}
+
+.dropdown-options:focus {
+  background-color: transparent;
+  color: transparent;
+  box-shadow: none !important;
+  outline: none;
+  border: none;
+}
+
+.options-item {
+  background-color: $delete-icon;
+  color: black;
+}
+
+.options-item:hover {
+  background-color: #ebc35e;
+  color: black;
+}
+
+.options-item:focus {
+  background-color: #ebc35e;
+  box-shadow: none !important;
+  color: black;
+}
+
+.vertical-overflow {
+  overflow-y: auto;
+  height: 85vh;
+}
+
+.vertical-overflow::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+.vertical-overflow::-webkit-scrollbar-track {
+  background: none;        /* color of the tracking area */
+}
+
+.vertical-overflow::-webkit-scrollbar-thumb {
+  background-color: $cool-gray-200;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 0;  /* creates padding around scroll thumb */
+}
+
+.share-button {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.empty {
+  color: white;
+}
+
+.special-modal .modal-content {
+  background-color: $background;
+}

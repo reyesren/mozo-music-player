@@ -1,0 +1,250 @@
+$playlist-green: #D9EA75;
+$delete-icon: #FCE19D;
+$cool-gray-200: #E4E7EB;
+$cool-gray-300: #9AA5B1;
+
+// Sidebar Component Styles
+
+.my-playlists {
+  background-color: white;
+  border: 0px;
+  color: black;
+  text-align: left;
+}
+
+.my-playlists:hover {
+  background-color: $cool-gray-200;
+  color: black;
+}
+
+.playlists-list {
+  background-color: white;
+  border: 0px;
+  color: black;
+  text-align: left;
+}
+
+.playlists-list:hover {
+  background-color: $cool-gray-200;
+  color: black;
+}
+
+.playlist-scrollable {
+  overflow-y: auto;
+  height: 30vh;
+}
+
+.playlist-scrollable::-webkit-scrollbar {
+width: 8px;               /* width of the entire scrollbar */
+}
+
+.playlist-scrollable::-webkit-scrollbar-track {
+background: none;        /* color of the tracking area */
+}
+
+.playlist-scrollable::-webkit-scrollbar-thumb {
+background-color: $cool-gray-200;    /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 0;  /* creates padding around scroll thumb */
+}
+
+.toggleList {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.left-align-item {
+  text-align: left;
+}
+
+.down-arrow {
+  align-self: center;
+}
+
+.left-col {
+  background-color: white;
+  height: 97vh;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  height: 97vh;
+  overflow-y: auto;
+}
+
+.new-playlist {
+  border-radius: 30px;
+  border: 0px;
+  background-color: $playlist-green;
+}
+
+.new-playlist:hover {
+  background-color: #c4dd38;
+}
+
+// Playlist Component Styles
+
+.borderless-button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.playlist-image {
+  border: 1px $cool-gray-200 solid;
+  padding: 10px;
+}
+
+.playlist-font {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.playlist-user {
+  color: $cool-gray-200;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.playlist-num-songs {
+  color: $cool-gray-200;
+  opacity: 0.2;
+  font-size: 11px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.no-playlists {
+  color: white;
+}
+
+.media-link {
+  text-decoration: none;
+}
+
+.media-link:hover {
+  text-decoration: none;
+}
+
+.media {
+  width: 100%;
+  min-width: 100%;
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  margin-left: -15px;
+}
+
+.line {
+  color: $cool-gray-200;
+  background-color: $cool-gray-200;
+  opacity: 0.5;
+  height: 0.2px;
+}
+
+.more-options {
+  background-color: transparent;
+  float: right;
+  color: white;
+  outline: none;
+  border: none;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.more-options:hover {
+  color: $playlist-green;
+}
+
+// Current Selected Playlist Component Styles
+.left-info {
+  height: 100vh;
+  border-right: 0.2px $cool-gray-200 solid;
+}
+
+.right-songs {
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  border: 1px $cool-gray-200 solid;
+  padding: 10px;
+  width: 100%;
+  height: 40%;
+  color: black;
+}
+
+.options-toggle {
+  background-color: transparent;
+  color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 0px;
+}
+
+.options-toggle:hover {
+  color: transparent;
+}
+
+.options-toggle:focus {
+  background-color: transparent;
+  color: transparent;
+  box-shadow: none !important;
+  outline: none;
+  border: none;
+}
+
+.options {
+  background-color: transparent;
+  float: right;
+  color: white;
+  outline: none;
+  border: none;
+}
+
+.options:hover {
+  color: $playlist-green;
+  overflow-wrap: anywhere;
+}
+
+.playlist-name {
+  color: $playlist-green;
+  overflow-wrap: anywhere;
+  font-size: 16px;
+  text-align: left;
+}
+
+.playlist-username {
+  color: $cool-gray-200;
+  opacity: 0.5;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.playlist-description {
+  color: white;
+  overflow-wrap: anywhere;
+  font-size: 14px;
+  text-align: left;
+}
+
+.transparent-form {
+  background-color: transparent;
+  color: white;
+}
+
+.access-lock {
+  color: white;
+  margin-top: 32.5px;
+}

@@ -1,0 +1,274 @@
+.media-controls-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 12%;
+  margin: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 5px 18px #424242;
+}
+
+.media-controls-footer-toggled {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 1s, opacity 1s;
+}
+
+.expand {
+  animation-duration: 1s;
+  animation-name: slide-up;
+}
+
+@keyframes slide-up {
+  from {
+    margin-bottom: -12%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
+
+.collapse-media-controls {
+  animation-duration: 1s;
+  animation-name: slide-down;
+}
+
+@keyframes slide-down {
+  from {
+    margin-bottom: 0%;
+    height: 12%;
+  }
+
+  to {
+    margin-bottom: -12%;
+    height: 0%;
+  }
+}
+
+.media-controls-center {
+  width: 50%;
+}
+
+.media-controls-container {
+  display: flex;
+  width: 100%;
+  margin: 10px auto;
+  justify-content: space-between;
+}
+
+.song-title {
+  text-align: center;
+}
+
+.song-artist {
+  text-align: center;
+}
+
+.media-control-1 {
+  width: 22px;
+  height: 22px;
+  color: white;
+}
+
+.media-control-2 {
+  width: 18px;
+  height: 18px;
+  color: white;
+}
+
+.media-control-3 {
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+
+.media-control-1:hover,
+.media-control-2:hover,
+.media-control-3:hover {
+  color: #75e2f2;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.media-controls-extra {
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.media-control-3-active {
+  color: #75e2f2;
+}
+
+.expand-collapse-container {
+  position: fixed;
+  bottom: 0;
+  left: 1%;
+  margin-left: 3px;
+  height: 12%;
+}
+
+@media (min-width: 900px) {
+  .media-controls-footer {
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 12%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 18px #424242;
+  }
+
+  .media-controls-footer-toggled {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 1s, opacity 1s;
+  }
+
+  .expand {
+    animation-duration: 1s;
+    animation-name: slide-up;
+  }
+
+  @keyframes slide-up {
+    from {
+      margin-bottom: -12%;
+    }
+
+    to {
+      margin-bottom: 0%;
+    }
+  }
+
+  .collapse-media-controls {
+    animation-duration: 1s;
+    animation-name: slide-down;
+  }
+
+  @keyframes slide-down {
+    from {
+      margin-bottom: 0%;
+      height: 12%;
+    }
+
+    to {
+      margin-bottom: -12%;
+      height: 0%;
+    }
+  }
+
+  .playlist-footer-photo {
+    height: 100%;
+    width: 100px;
+    background-color: #d5ee32;
+  }
+
+  .media-controls-center {
+    width: 50%;
+  }
+
+  .media-controls-container {
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+
+  .song-title {
+    text-align: center;
+  }
+
+  .song-artist {
+    text-align: center;
+  }
+
+  .media-control-1 {
+    width: 28px;
+    height: 28px;
+    color: white;
+  }
+
+  .media-control-2 {
+    width: 20px;
+    height: 20px;
+    color: white;
+  }
+
+  .media-control-3 {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+
+  .media-control-3-active {
+    color: #75e2f2;
+  }
+
+  @keyframes change-control {
+    from {
+      margin-bottom: 0%;
+      height: 200%;
+    }
+    to {
+      margin-bottom: 0%;
+      height: 300%;
+    }
+  }
+
+  .media-control-1:hover,
+  .media-control-2:hover,
+  .media-control-3:hover {
+    color: #75e2f2;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .media-controls-extra {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .expand-collapse-container {
+    position: fixed;
+    bottom: 0;
+    left: 73.5%;
+    margin-left: 3px;
+    height: 15%;
+  }
+}
+
+.expand-collapse-btn {
+  color: rgb(151, 148, 148);
+}
+
+.expand-collapse-btn:hover {
+  color: #fff083;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

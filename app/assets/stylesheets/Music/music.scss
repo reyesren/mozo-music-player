@@ -1,0 +1,121 @@
+$song-green: #d9ea75;
+$delete-icon: #fce19d;
+$cool-gray-200: #e4e7eb;
+$cool-gray-300: #9aa5b1;
+
+// New music Button
+.new-music {
+  border-radius: 30px;
+  border: 0px;
+  background-color: $song-green;
+}
+
+.new-music:hover {
+  background-color: #c4dd38;
+}
+
+.new-music:focus {
+  background-color: #c4dd38;
+  box-shadow: none !important;
+}
+
+// Sort Dropdown
+.sort-dropdown-toggle {
+  border-radius: 30px;
+  border: 0px;
+  background-color: $song-green;
+}
+
+.sort-dropdown-toggle:hover {
+  background-color: #c4dd38;
+}
+
+.sort-dropdown-toggle:focus {
+  background-color: #c4dd38;
+  box-shadow: none !important;
+}
+
+.sort-dropdown-menu {
+  background-color: $song-green;
+}
+
+.sort-dropdown-item {
+  background-color: $song-green;
+  color: black;
+}
+
+.sort-dropdown-item:hover {
+  background-color: #c4dd38;
+  color: black;
+}
+
+.sort-dropdown-item:focus {
+  background-color: #c4dd38;
+  box-shadow: none !important;
+  color: black;
+}
+
+// Songs Component
+
+.song-image {
+  border: 1px $cool-gray-200 solid;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.song-font {
+  color: white;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.song-artist {
+  color: $cool-gray-200;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.song-length {
+  color: $cool-gray-200;
+  opacity: 0.3;
+  font-size: 11px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.no-songs {
+  color: white;
+}
+
+.song-options {
+  background-color: $delete-icon;
+  padding: 10px;
+  color: black;
+  border-radius: 3;
+}
+
+// Upload Songs Modal
+
+.upload-from {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.source-or-url {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flash-msg-container {
+  margin-left: 50%;
+  background-color: black;
+  width: 20%;
+}

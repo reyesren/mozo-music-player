@@ -1,0 +1,14 @@
+.close-btn {
+  color: white;
+  float: right;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #888;
+  cursor: pointer;
+}

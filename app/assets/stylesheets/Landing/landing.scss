@@ -1,0 +1,39 @@
+$cool-gray-200: #e4e7eb;
+$cool-gray-300: #9aa5b1;
+$playlist-font: #d9ea75;
+$create-playlist: #f0fda1;
+$delete-icon: #fce19d;
+
+.btn-order-active {
+  background-color: #c4dd38;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.btn-order-active:hover {
+  background-color: #c4dd38;
+  color: black;
+}
+
+.btn-order-active:focus {
+  background-color: #c4dd38;
+  box-shadow: none !important;
+}
+
+.btn-order {
+  background-color: $playlist-font;
+  outline: none;
+  border: none;
+  color: black;
+}
+
+.btn-order:hover {
+  background-color: #c4dd38;
+  color: black;
+}
+
+.btn-order:focus {
+  background-color: #c4dd38;
+  box-shadow: none !important;
+}

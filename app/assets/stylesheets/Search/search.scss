@@ -1,0 +1,87 @@
+$white: white;
+$black: black;
+$background: #1f2933;
+$cool-gray-200: #e4e7eb;
+$cool-gray-300: #9aa5b1;
+$playlist-font: #d9ea75;
+$create-playlist: #f0fda1;
+$delete-icon: #fce19d;
+
+.search-icon {
+  color: $white;
+  margin-right: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.search-bar {
+  position: relative;
+  background-color: $white;
+  color: $black;
+  margin-right: 15px;
+}
+
+.search-results {
+  position: absolute;
+  @media only screen and (min-width: 768px) {
+    top: 52px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    top: 270px;
+    left: 16px;
+  }
+}
+
+.search-results-item {
+  background-color: $background;
+}
+
+.search-media {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.search-image {
+  border: 1px $cool-gray-200 solid;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+}
+
+.search-name {
+  color: $playlist-font;
+  overflow-wrap: anywhere;
+  margin-bottom: 1px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.search-user {
+  color: $cool-gray-200;
+  opacity: 0.5;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.search-views {
+  color: $cool-gray-200;
+  opacity: 0.5;
+  font-size: 10px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
+
+.search-songs {
+  color: $cool-gray-200;
+  opacity: 0.2;
+  font-size: 9px;
+  text-align: left;
+  margin-bottom: 0px;
+  overflow-wrap: anywhere;
+}
